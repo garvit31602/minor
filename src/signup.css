@@ -1,0 +1,206 @@
+.signup body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: url("./images/login1.jpg") center/cover no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    min-height: 100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+  }
+  
+  .signup-container {
+    background-color:cadetblue;
+    border:2px solid rgba(255,255,255,0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+
+    padding: 80px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    margin-right: 30px;
+    margin-left: 30px;
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+  
+  #z3 {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  /* Define the hover effect */
+  #z3:hover {
+    background-color: greenyellow;
+    color: blueviolet;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 10px;
+  }
+  
+  .signup ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+  }
+  
+  .signup ul li {
+    list-style: none;
+  }
+  
+ .signup ul li a {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    /* taaki jo facebook wgera hai wo hover krne pr uska box bahar na jae 
+    agr scroll ya visible krnge to changes ajaenge usme */
+    border: 3px solid #fff;
+  }
+  
+ .signup ul li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+     /* used for stacking the elements like suppose 
+     isme z index 1 dal diya to niche wla box upr
+      ajaega icon ke hover krne ke phle hi bcz icon ka stack value ko least priorty milra
+      bcz z jiska jyada rhta usko jyada priority dete
+     */
+  }
+  
+ .signup ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+    /* it will rotate the icons on boxes */
+  }
+  
+  .signup  li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+  }
+  
+ .signup ul li a:hover:before {
+    top: 0;
+  }
+  
+  .signup li:nth-child(1) a:before {
+    /* nth child(1) means 1st wale child ka hover ke baad ka property set krega */
+    background: #3b5999;
+  }
+  
+  .signup li:nth-child(2) a:before {
+    background: #55acee;
+  }
+  
+ .signup ul li:nth-child(3) a:before {
+    background: #0077b5;
+  }
+  
+  .signup li:nth-child(4) a:before {
+    background: #dd4b39;
+  }
+  
+  .signup {
+    margin: -20px;
+  }
+  
+  .signup h2 {
+    margin-bottom: 20px;
+  }
+  
+  #z3:hover {
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 10px;
+  }
+  
+  /* .social-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-list li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+   */
+   
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+  }
+  
+  .signup [type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: transparent;
+
+  }
+  
+  .signup [type="checkbox"] {
+    margin-right: 0px;
+  }
+  
+  .btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .help-text {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .help-email {
+    font-weight: bold;
+  }

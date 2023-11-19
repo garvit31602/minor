@@ -1,0 +1,151 @@
+:root {
+    --black: #000;
+    --grey: #121212;
+    --light-grey: #232323;
+    --white: #fff;
+  }
+ .profile body,
+  html {
+    height: 100%;
+    margin: 0rem;
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito", sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+  }
+  
+.profile h1{
+  margin :10px;
+}
+
+  .profile a {
+    color: var(--white);
+    text-decoration: none;
+  }
+  
+  .container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    background-color: var(--black);
+    padding: 0.5rem;
+  }
+  
+  .sidebar {
+    flex: 0.25;
+    overflow-y: auto;
+  
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.5rem;
+  }
+  
+  .top-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--grey);
+    border-radius: 0.5rem;
+  }
+  
+  .link-flex {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+    opacity: 0.7;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  
+  .link-flex:hover {
+    opacity: 1;
+    transition: all 0.3s;
+  }
+  
+  .link-flex img {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+  .link-flex p {
+    font-size: 1rem;
+    color: var(--white);
+  }
+  
+  .library {
+    border-radius: 0.5rem;
+    flex: 3;
+    overflow-y: auto;
+    background-color: var(--grey);
+    padding: 0.5rem 1.5rem;
+  }
+  
+  .main-content {
+    flex: 0.8;
+    overflow-y: auto;
+    background-color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1rem;
+    border-radius: 0.5rem;
+    padding-bottom: 6rem;
+  }
+
+  .cards-container {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    /* Other styles as needed */
+  }
+  
+  .card {
+    width: 150px;
+    background-color: var(--light-grey);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin: 0rem 0.75rem;
+  }
+  
+  .card-img {
+    height: 150px;
+    width: 100%;
+    border-radius: 0.35rem;
+  }
+  
+  .card-name {
+    margin: 0.25rem 0;
+  }
+  
+  .card-description {
+    margin: 0;
+    font-size: 0.8rem;
+    opacity: 0.5;
+  }
+
+  #search{
+    background-color: var(--grey);
+    color: var(--white);
+    height: 35px;
+    width: 350px;
+    border-radius: 100px;
+  }
+
+  #image{
+    width: 150px;
+    height: 150px;
+  }
+
+i{
+  position: absolute;
+  margin: 10px;
+  font-size: 20px;
+}
+
+input{
+  text-indent: 35px;
+}
+  
